@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="marcas_array">
+        <item>--Seleccion un item--</item>
         <item>Trimerx</item>
         <item>Panduit</item>
         <item>Fluke</item>
