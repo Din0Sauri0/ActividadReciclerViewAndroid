@@ -34,6 +34,8 @@ public class productoAdapter extends RecyclerView.Adapter<productoAdapter.viewHo
         holder.txtRecycler.setText(productoList.get(position).getNombre());
         holder.txtCantidadRecycler.setText(productoList.get(position).getDescripcion());
         holder.btnRecycler.setText(productoList.get(position).getCantidad());
+        holder.txtMarca.setText(productoList.get(position).getMarca());
+        holder.txtValoracion.setText(productoList.get(position).getValoracion());
     }
 
     @Override
@@ -42,13 +44,15 @@ public class productoAdapter extends RecyclerView.Adapter<productoAdapter.viewHo
     }
 
     public class viewHolderDatos extends RecyclerView.ViewHolder {
-        TextView txtRecycler, txtCantidadRecycler;
+        TextView txtRecycler, txtCantidadRecycler, txtValoracion, txtMarca;
         Button btnRecycler;
         public viewHolderDatos(@NonNull View itemView) {
             super(itemView);
             txtRecycler = itemView.findViewById(R.id.txtRecycler);
             txtCantidadRecycler = itemView.findViewById(R.id.txtCantidadRecycler);
             btnRecycler = itemView.findViewById(R.id.btnRecycler);
+            txtMarca = itemView.findViewById(R.id.txtMarca);
+            txtValoracion = itemView.findViewById(R.id.txtValoracion);
         }
     }
 }

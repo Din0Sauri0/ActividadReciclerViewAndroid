@@ -55,6 +55,7 @@ public class registerActivity extends AppCompatActivity {
         spinner.setEnabled(false);
         cbxConfirmar.setEnabled(false);
         ratingBar.setEnabled(false);
+        btnRegistrar.setEnabled(false);
 
         //Escuchadores
         txtNombreP.addTextChangedListener(new TextWatcher() {
@@ -135,8 +136,10 @@ public class registerActivity extends AppCompatActivity {
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
                 if(ratingBar.getRating() > 0){
                     cbxConfirmar.setEnabled(true);
+
                 }else{
                     cbxConfirmar.setEnabled(false);
+
                 }
             }
         });
@@ -160,8 +163,16 @@ public class registerActivity extends AppCompatActivity {
                 String nombre = txtNombreP.getText().toString();
                 String descripcion = txtDescripcionP.getText().toString();
                 String cantidad = txtCantidad.getText().toString();
-                producto Producto = new producto(nombre,descripcion,cantidad);
+                String marca = spinner.getSelectedItem().toString();
+                String valoracion = Float.toString(ratingBar.getRating());
+
+                producto Producto = new producto(nombre,descripcion,cantidad,marca,valoracion);
                 productList.add(Producto);
+
+                producto producto2 = new producto("utp","cable multiproposito","20", "trimerx","4.0");
+                producto producto3 = new producto("ftp","cable multiproposito blindado","200", "panduit","4.0");
+                productList.add(producto2);
+                productList.add(producto3);
             }
         });
 
