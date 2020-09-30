@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 public class reciclerView extends AppCompatActivity {
 
+    //RecyclerView recycler;
     RecyclerView recycler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,8 @@ public class reciclerView extends AppCompatActivity {
         recycler.setLayoutManager(new LinearLayoutManager(this));
         productoAdapter adapter = new productoAdapter(this, registerActivity.productList);
         recycler.setAdapter(adapter);
+
+
 
 
     }

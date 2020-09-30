@@ -159,7 +159,7 @@ public class registerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(registerActivity.this,"presionado", Toast.LENGTH_LONG).show();
+                Toast.makeText(registerActivity.this,"Se ha registrado el producto", Toast.LENGTH_LONG).show();
                 String nombre = txtNombreP.getText().toString();
                 String descripcion = txtDescripcionP.getText().toString();
                 String cantidad = txtCantidad.getText().toString();
@@ -168,13 +168,9 @@ public class registerActivity extends AppCompatActivity {
 
                 producto Producto = new producto(nombre,descripcion,cantidad,marca,valoracion);
                 productList.add(Producto);
-
-                producto producto2 = new producto("utp","cable multiproposito","20", "trimerx","4.0");
-                producto producto3 = new producto("ftp","cable multiproposito blindado","200", "panduit","4.0");
-                productList.add(producto2);
-                productList.add(producto3);
             }
         });
+
 
     }
 }

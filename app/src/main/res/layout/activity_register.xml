@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffff"
     tools:context=".registerActivity">
 
     <TextView
@@ -22,12 +23,16 @@
 
     <EditText
         android:id="@+id/txtNombreP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="58dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#7fdbda"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,12 +40,16 @@
 
     <EditText
         android:id="@+id/txtDescripcionP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#7fdbda"
         android:ems="10"
         android:hint="Descripcion"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,21 +57,27 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCantidad" />
 
     <EditText
         android:id="@+id/txtCantidad"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#7fdbda"
         android:ems="10"
         android:hint="Cantidad"
         android:inputType="number"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDescripcionP" />
@@ -71,7 +86,9 @@
         android:id="@+id/cbxConfimar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
         android:text="¿Los datos ingresado son correctos?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.583"
@@ -80,9 +97,12 @@
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_rounded"
         android:text="Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -104,9 +124,11 @@
 
     <RatingBar
         android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Valoración de la marca"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
